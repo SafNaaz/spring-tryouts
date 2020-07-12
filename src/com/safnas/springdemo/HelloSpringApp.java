@@ -14,6 +14,9 @@ public class HelloSpringApp {
 		//call method on bean
 		System.out.println(theCoach.getDailyWorkout());
 		
+		//call injected method
+		System.out.println(theCoach.getFortune());
+		
 		//close context
 		context.close();
 

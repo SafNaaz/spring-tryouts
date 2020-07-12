@@ -5,6 +5,10 @@ public class TrackCoach implements Coach {
 	//define a private field
 	FortuneService fortuneService;
 	
+	//empty constructor to aviod errors
+	public TrackCoach() {
+	}
+	
 	//create a constructor
 	TrackCoach(FortuneService theFortuneService){
 		fortuneService = theFortuneService;

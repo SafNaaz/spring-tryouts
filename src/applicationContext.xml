@@ -10,7 +10,7 @@
 	
     <!-- Define your beans here -->
     <bean id="myCoach"
-    	class="com.safnas.springdemo.TrackCoach">
+    	class="com.safnas.springdemo.BaseballCoach">
     </bean>
 
 </beans>

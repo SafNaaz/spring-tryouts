@@ -7,6 +7,9 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!-- loading property file -->
+	<context:property-placeholder location="classpath:sport.properties"/>
+	
 	<!-- define dependency -->
 	<bean id="myFortuneService"
 		class="com.safnas.springdemo.HappyFortuneService">
@@ -27,8 +30,8 @@
     	<property name="fortuneService" ref="myFortuneService"/>
     	
     	<!-- literal injection -->
-    	<property name="emailAddress" value="iamsafnas@gmail.com"/>
-    	<property name="team" value="Kolkata Night riders"/>
+    	<property name="emailAddress" value="${foo.email}"/>
+    	<property name="team" value="${foo.team}"/>
     </bean>
 
 </beans>

@@ -14,7 +14,8 @@
 	</bean>
     <!-- Define your beans here -->
     <bean id="myCoach"
-    	class="com.safnas.springdemo.BaseballCoach">
+    	class="com.safnas.springdemo.BaseballCoach"
+    	scope="prototype">
     	<!-- constructor injection -->
     	<constructor-arg ref="myFortuneService"/>
     </bean>

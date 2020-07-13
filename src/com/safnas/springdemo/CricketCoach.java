@@ -4,6 +4,11 @@ public class CricketCoach implements Coach {
 
 	private FortuneService fortuneService;
 	
+	//private fields
+	
+	private String emailAddress;
+	private String team;
+	
 	public CricketCoach() {
 		System.out.println("CricketCoach: Inside no arg constructor");
 	}
@@ -23,6 +28,22 @@ public class CricketCoach implements Coach {
 	@Override
 	public String getFortune() {
 		return fortuneService.getFortune();
+	}
+	
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		this.team = team;
 	}
 
 }
